@@ -4,8 +4,31 @@
   padding: 0;
 }
 body { /*moves web page down*/
-  padding-top: 10px;
+  padding-top: 10px; 
 }
+
+:root{
+  --h3_ft_size: 22px;
+  --bg-color:rgb(237,204,161);
+  --bg-footer:rgb(237, 204, 161);
+}
+  #h3_1{
+    --h3_ft_size:22px;
+    font-size:var(--h3_ft_size)
+  }
+  #h3_2{
+    --h3_ft_size:22px;
+    font-size:var(--h3_ft_size)
+  }
+  .active{
+    --bg-color: rgb(237, 204, 161);
+    background-color:var(--bg-color)
+  }
+  footer{
+  --bg-footer:rgb(237, 204, 161);
+  background-color: var(--bg-footer);
+  }
+
 header {
   width: 90%;
   margin: auto;
@@ -20,8 +43,8 @@ header {
   padding: 0;
   margin-top: 15px;
 }
-header h3 {
-  font-size: 22px;
+#h3_1 {
+ 
   width: 8%;
   margin-top: 15px;
   margin-left: 10px;
@@ -50,9 +73,7 @@ li {
   border-right: 1px solid black;
   list-style: none;
 }
-.active {
-  background-color:rgb(237, 204, 161);
-}
+
 .top_img {
   display: flex;
   margin:auto;
@@ -122,7 +143,6 @@ figcaption {
 footer {
   width: 100%;
   height:auto;
-  background-color:rgb(237, 204, 161);
   display:flex;
   justify-content:space-around;
   margin: auto;
@@ -139,11 +159,9 @@ footer {
 }
 
 /*TLC Coffee & Tea header*/
-.hd3_2 {
+#h3_2 {
  font-weight: lighter;
- font-size: 22px;
  flex-grow: 1;
-
 }
 .address_info { /*VISIT US Address section*/
   flex-grow: 2;
@@ -217,7 +235,7 @@ footer {
   .logo{
     width: 11%;
   }
-header h3{
+ #h3_1{
   width:11%;
   padding-left: 10px;
   margin-left: 0;
@@ -281,7 +299,7 @@ footer {
   margin-left: 0;
 
 }
-  header h3 {
+  #h3_1 {
   width: 50%;
  
   padding-left: 5px;
@@ -332,7 +350,7 @@ display: block;
 text-align: center;
 }
 /*TLC Coffee & Tea header*/
-.hd3_2 {
+#h3_2 {
   width: 100%;
   margin-right: 0;
   margin-left: 0;
