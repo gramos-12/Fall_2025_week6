@@ -28,7 +28,24 @@ body { /*moves web page down*/
   --bg-footer:rgb(237, 204, 161);
   background-color: var(--bg-footer);
   }
-
+@keyframes menu_big{
+  from{
+    font-size:30px;
+    color: #000000;
+  }
+    to{
+      font-size:60px;
+      color: goldenrod;
+    }
+  }
+  #menu_picks{
+    animation-name: menu_big;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+  }
+  .main img{
+  animation-ea
+  }
 header {
   width: 90%;
   margin: auto;
@@ -94,10 +111,10 @@ li {
   margin:auto;
   width: 100%;
 }
-.main h2 {
+ #menu_picks {
   margin-top: 40px;
   text-align: center;
-  font-size: 30px;
+  font-size: 30px; 
 }
 .main {
   width: 90%;
