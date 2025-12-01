@@ -6,28 +6,28 @@
 body { /*moves web page down*/
   padding-top: 10px; 
 }
-
+/*-----------   This is where css variav les keyframes are located   ----------*/
 :root{
   --h3_ft_size: 22px;
   --bg-color:rgb(237,204,161);
-  --bg-footer:rgb(237, 204, 161);
+  --p-text-color: black;
+  --wgt-font:normal;
 }
-  #h3_1{
+h3{
     --h3_ft_size:22px;
-    font-size:var(--h3_ft_size)
-  }
-  #h3_2{
-    --h3_ft_size:22px;
-    font-size:var(--h3_ft_size)
-  }
-  .active{
-    --bg-color: rgb(237, 204, 161);
+    font-size:var(--h3_ft_size);
+    --wgt-font:bold;
+    font-weight:var(--wgt-font)
+}
+p{
+  --p-text-color:blue;
+  color:var(--p-text-color)
+}
+   .active, footer{
+    
     background-color:var(--bg-color)
   }
-  footer{
-  --bg-footer:rgb(237, 204, 161);
-  background-color: var(--bg-footer);
-  }
+  
 @keyframes menu_big{
   from{
     font-size:30px;
@@ -40,12 +40,12 @@ body { /*moves web page down*/
   }
   #menu_picks{
     animation-name: menu_big;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
+    animation-fill-mode:none;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 1s;
   }
-  .main img{
-  animation-ea
-  }
+  /*----------   end of variables and keframes coding  ----------*/
 header {
   width: 90%;
   margin: auto;
@@ -177,7 +177,7 @@ footer {
 
 /*TLC Coffee & Tea header*/
 #h3_2 {
- font-weight: lighter;
+
  flex-grow: 1;
 }
 .address_info { /*VISIT US Address section*/
